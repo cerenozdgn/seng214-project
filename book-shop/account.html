@@ -1,253 +1,468 @@
 <!DOCTYPE html>
-<style>
-body{
-    background: -webkit-linear-gradient(left, #4c4c4c, #bebebe);
-}
-.emp-profile{
-    padding: 3%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    border-radius: 0.5rem;
-    background: #fff;
-}
-.profile-img{
-    text-align: center;
-}
-.profile-img img{
-    width: 70%;
-    height: 100%;
-}
-.profile-img .file {
-    position: relative;
-    overflow: hidden;
-    margin-top: -20%;
-    width: 70%;
-    border: none;
-    border-radius: 0;
-    font-size: 15px;
-    background: #212529b8;
-}
-.profile-img .file input {
-    position: absolute;
-    opacity: 0;
-    right: 0;
-    top: 0;
-}
-.profile-head h5{
-    color: #333;
-}
-.profile-head h6{
-    color: #060606;
-}
-.profile-edit-btn{
-    border: none;
-    border-radius: 1.5rem;
-    width: 70%;
-    padding: 2%;
-    font-weight: 600;
-    color: #6c757d;
-    cursor: pointer;
-}
-.proile-rating{
-    font-size: 12px;
-    color: #818182;
-    margin-top: 5%;
-}
-.proile-rating span{
-    color: #495057;
-    font-size: 15px;
-    font-weight: 600;
-}
-.profile-head .nav-tabs{
-    margin-bottom:5%;
-}
-.profile-head .nav-tabs .nav-link{
-    font-weight:600;
-    border: none;
-}
-.profile-head .nav-tabs .nav-link.active{
-    border: none;
-    border-bottom:2px solid #2b2c2c;
-}
-.profile-work{
-    padding: 14%;
-    margin-top: -15%;
-}
-.profile-work p{
-    font-size: 12px;
-    color: #818182;
-    font-weight: 600;
-    margin-top: 10%;
-}
-.profile-work a{
-    text-decoration: none;
-    color: #495057;
-    font-weight: 600;
-    font-size: 14px;
-}
-.profile-work ul{
-    list-style: none;
-}
-.profile-tab label{
-    font-weight: 600;
-}
-.profile-tab p{
-    font-weight: 600;
-    color: #3d3d3d;
-}
-</style>
-
 <head>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Meta Tags For Seo + Page Optimization -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Themes Industry">
+    <!-- description -->
+    <meta name="description" content="MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose agency and HTML5 template with 14 ready home page demos.">
+    <!-- keywords -->
+    <meta name="keywords" content="creative, modern, clean, bootstrap responsive, h tml5, css3, portfolio, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, personal, masonry, grid, faq">
+    <!-- Page Title -->
+    <title>Ticketix</title>
+    <!-- Favicon -->
+    <link rel="icon" href="dummy-img/favicon.ico">
+    <!-- Bundle -->
+    <link rel="stylesheet" href="../vendor/css/bundle.min.css">
+    <!-- Plugin Css -->
+    <link rel="stylesheet" href="../vendor/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../vendor/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../vendor/css/swiper.min.css">
+    <link rel="stylesheet" href="../vendor/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="../vendor/css/wow.css">
+    <link rel="stylesheet" href="../vendor/css/LineIcons.min.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/range-slider.css">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/line-awesome.min.css" rel="stylesheet">
+    <link href="../vendor/css/revolution-settings.min.css" rel="stylesheet">
+    <!-- Slider Setting Css  -->
+    <link rel="stylesheet" href="css/settings.css">
+    <!-- Mega Menu  -->
+    <link rel="stylesheet" href="css/megamenu.css">
+    <!-- StyleSheet  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/nouislider.min.css" rel="stylesheet">
+    <link href="css/range-slider.css" rel="stylesheet">
+    <!-- Custom Css  -->
+    <link rel="stylesheet" href="css/custom.css">
+
 </head>
 
 
-<div class="container emp-profile">
-            <form method="post">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="profile-img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt=""/>
-                            <div class="file btn btn-lg btn-primary">
-                                Change Photo
-                                <input type="file" name="file"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="profile-head">
-                                    <h5>
-                                        Kshiti Ghelani
-                                    </h5>
-                                    <h6>
-                                        Web Developer and Designer
-                                    </h6>
-                                    <p class="proile-rating">RANKINGS : <span>8/10</span></p>
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
-                    </div>
+<body>
+
+    <a class="scroll-top-arrow" href="javascript:void(0);"><i class="fa fa-angle-up"></i></a>
+    
+    
+    <!-- START HEADER NAVIGATION -->
+    <div class="header-area">
+        <div class="container">
+            <div class="row upper-nav">
+                <div class=" text-left nav-logo">
+                    <a href="index-book-shop.html" class="navbar-brand"><img src="img/5.png" alt="img"></a>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="profile-work">
-                            <p>WORK LINK</p>
-                            <a href="">Website Link</a><br/>
-                            <a href="">Bootsnipp Profile</a><br/>
-                            <a href="">Bootply Profile</a>
-                            <p>SKILLS</p>
-                            <a href="">Web Designer</a><br/>
-                            <a href="">Web Developer</a><br/>
-                            <a href="">WordPress</a><br/>
-                            <a href="">WooCommerce</a><br/>
-                            <a href="">PHP, .Net</a><br/>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="tab-content profile-tab" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>User Id</label>
+                <div class="ml-auto nav-mega d-flex justify-content-end align-items-center">
+                    <header class="site-header" id="header">
+                        <nav class="navbar navbar-expand-md  static-nav">
+                            <div class="container position-relative megamenu-custom">
+                                <a class="navbar-brand center-brand" href="index-book-shop.html">
+                                    <img src="img/logo.png" alt="logo" class="logo-scrolled">
+                                </a>
+                                <div class="collapse navbar-collapse">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index-book-shop.html">HOME</a>
+                                        </li>
+                                        <li class="nav-item dropdown static">
+                                            <a class="nav-link dropdown-toggle active" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> BOOKS </a>
+                                            <ul class="dropdown-menu megamenu flexable-megamenu">
+                                                <li>
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-lg-3 col-md-6 col-sm-12 mengmenu_border">
+                                                                <h5 class="dropdown-title"> Most Wanted </h5>
+                                                                <ul>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Love Does</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">No One Belongs</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">As I Lay Dying</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Life is Elsewhere</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">The Road</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Why Me?</a></li>
+                                                                </ul>
+                                                                <h5 class="dropdown-title"> Classic </h5>
+                                                                <ul>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Lorna Doone</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Lord of Flies</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Kidnapped</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">End World</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-6 col-sm-12 mengmenu_border">
+                                                                <h5 class="dropdown-title"> NOVEL's </h5>
+                                                                <ul>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Romance</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Fantasy</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Thrillers</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Science Fiction</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Historical Fiction</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Others</a></li>
+                                                                </ul>
+    
+                                                                <h5 class="dropdown-title"> HISTORY </h5>
+                                                                <ul>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Creative Thinking</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Historical Fiction</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Creative Thinking</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Personal Finance</a></li>
+                                                                </ul>
+    
+                                                            </div>
+    
+                                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                                <h5 class="dropdown-title text-left">Featured Items </h5>
+                                                                <div class="carousel-menu mt-4">
+                                                                    <div class="featured-megamenu-carousel owl-carousel owl-theme">
+                                                                        <div class="item ">
+                                                                            <img src="book-shop/img/shop1.jpg" alt="shop-image" >
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <img src="book-shop/img/shop2.jpg"  alt="shop-image">
+                                                                        </div>
+                                                                    </div>
+                                                                    <i class="lni-chevron-left ini-customPrevBtn"></i>
+                                                                    <i class="lni-chevron-right ini-customNextBtn"></i>
+                                                                </div>
+                                                                <p class="mt-4 megamenu-slider-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                                                                <a href="book-shop/product-listing.html" class="btn black-border-color-yellow-gradient-btn slider-btn text-left">Buy Now</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown static">
+                                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> E-BOOKS </a>
+                                            <ul class="dropdown-menu megamenu flexable-megamenu">
+                                                <li>
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-lg-3 col-md-6 col-sm-12 mengmenu_border">
+                                                                <h5 class="dropdown-title bottom10"> Categories </h5>
+    
+                                                                <ul>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Art</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Autobiography</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Biography</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Chick lit</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Anthology</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Coming-of-age</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Drama</a></li>
+    
+                                                                </ul>
+    
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-6 col-sm-12 mengmenu_border">
+                                                                <h5 class="dropdown-title opacity-10"> Others </h5>
+                                                                <ul>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Crime</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i> <a class="dropdown-item" href="book-shop/product-listing.html">Dictionary</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i> <a class="dropdown-item" href="book-shop/product-listing.html">Health</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">History</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Journal
+                                                                    </a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Horror</a></li>
+                                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Poetry</a></li>
+                                                                </ul>
+    
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-6 col-sm-12 mengmenu_border">
+                                                                <h5 class="dropdown-title bottom10"> Author's </h5>
+    
+                                                                <div class="media outlet-media mt-3">
+                                                                    <div class="box">
+                                                                        <img class="align-self-start" src="book-shop/img/author1.jpg" alt="Generic placeholder image">
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <h6 class="mt-3 ml-3"><a href="#">Eva Smith</a></h6>
+                                                                    </div>
+                                                                </div>
+    
+                                                                <div class="media outlet-media">
+                                                                    <div class="box">
+                                                                        <img class="align-self-start" src="book-shop/img/author2.jpg" alt="Generic placeholder image">
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <h6 class="mt-3 ml-3"><a href="#">Rosa Parks</a></h6>
+                                                                    </div>
+                                                                </div>
+    
+                                                                <div class="media outlet-media">
+                                                                    <div class="box">
+                                                                        <img class="align-self-start" src="book-shop/img/author3.jpg" alt="Generic placeholder image">
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <h6 class="mt-3 ml-3"><a href="#">Alan Yang</a></h6>
+                                                                    </div>
+                                                                </div>
+    
+    
+                                                                <div class="media outlet-media">
+                                                                    <div class="box">
+                                                                        <img class="align-self-start" src="book-shop/img/author4.jpg" alt="Generic placeholder image">
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <h6 class="mt-3 ml-3"><a href="#">Kam John</a></h6>
+                                                                    </div>
+                                                                </div>
+    
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-6 col-sm-12 pt-3">
+                                                                <a href="javascript:void(0);"><img src="book-shop/img/featured-product.jpg" alt="image"></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown position-relative">
+                                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PAGES</a>
+                                            <div class="dropdown-menu">
+                                                <ul>
+                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-listing.html">Listing One</a></li>
+                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/product-detail.html">Detail Page</a></li>
+                                                    <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="book-shop/shop-cart.html.html">ShopCart Page</a></li>
+                                                </ul>
                                             </div>
-                                            <div class="col-md-6">
-                                                <p>Kshiti123</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Name</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>Kshiti Ghelani</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Email</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>kshitighelani@gmail.com</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Phone</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>123 456 7890</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Profession</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>Web Developer and Designer</p>
-                                            </div>
-                                        </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="book-shop/contact.html">CONTACT</a>
+                                        </li>
+    
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Experience</label>
+                        </nav>
+    
+                        <!-- side menu -->
+                        <div class="side-menu opacity-0 gradient-bg hidden">
+                            <div class="inner-wrapper">
+                                <span class="btn-close btn-close-no-padding" id="btn_sideNavClose"><i></i><i></i></span>
+                                <nav class="side-nav w-100">
+                                    <ul class="navbar-nav">
+    
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="book-shop/product-listing.html"> HOME</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link collapsePagesSideMenu" data-toggle="collapse" href="#sideNavPages1">
+                                                BOOKS <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <div id="sideNavPages1" class="collapse sideNavPages">
+    
+                                                <ul class="navbar-nav mt-2">
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Love Does</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">No One Belongs</a></li>
+                                                    <li class="nav-item" ><a class="nav-link" href="book-shop/product-listing.html">As I Lay Dying</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Life is Elsewhere</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">The Road</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Why Me?</a></li>
+                                                </ul>
+                                                <h5 class="sub-title">1. Classic</h5>
+                                                <ul class="navbar-nav mt-2">
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Lorna Doone</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Lord of Flies</a></li>
+                                                    <li class="nav-item" ><a class="nav-link" href="book-shop/product-listing.html">Kidnapped</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">End World</a></li>
+                                                </ul>
+    
+                                                <h5 class="sub-title">2. Novel's</h5>
+                                                <ul class="navbar-nav mt-2">
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Romance</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Fantasy</a></li>
+                                                    <li class="nav-item" ><a class="nav-link" href="book-shop/product-listing.html">Thrillers</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Historical Fiction</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Others</a></li>
+                                                </ul>
+    
+                                                <h5 class="sub-title">3. History</h5>
+                                                <ul class="navbar-nav mt-2">
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Creative Thinking</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Historical Fiction</a></li>
+                                                    <li class="nav-item" ><a class="nav-link" href="book-shop/product-listing.html">Creative Thinking</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Personal Finance</a></li>
+                                                </ul>
                                             </div>
-                                            <div class="col-md-6">
-                                                <p>Expert</p>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link collapsePagesSideMenu" data-toggle="collapse" href="#sideNavPages3">
+                                                E-BOOKS <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <div id="sideNavPages3" class="collapse sideNavPages">
+                                                <ul class="navbar-nav mt-2">
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Art</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Autobiography</a></li>
+                                                    <li class="nav-item" ><a class="nav-link" href="book-shop/product-listing.html">Biography</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Chick lit</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Coming-of-age</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Anthology</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Drama</a></li>
+                                                </ul>
+                                                <h5 class="sub-title">1. Others</h5>
+                                                <ul class="navbar-nav mt-2">
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Crime</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html"> Dictionary</a></li>
+                                                    <li class="nav-item" ><a class="nav-link" href="book-shop/product-listing.html"> Health</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">History</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Horror</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="book-shop/product-listing.html">Poetry</a></li>
+                                                </ul>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Hourly Rate</label>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link collapsePagesSideMenu" data-toggle="collapse" href="#sideNavPages2">
+                                                PAGES <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <div id="sideNavPages2" class="collapse sideNavPages">
+                                                <ul class="navbar-nav">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="book-shop/product-listing.html">Listing One</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="book-shop/product-detail.html">Detail Page</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="book-shop/shop-cart.html">ShopCart Page</a>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div class="col-md-6">
-                                                <p>10$/hr</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Total Projects</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>230</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>English Level</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>Expert</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Availability</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>6 months</p>
-                                            </div>
-                                        </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <label>Your Bio</label><br/>
-                                        <p>Your detail description</p>
-                                    </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="book-shop/contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="side-footer w-100">
+                                    <ul class="social-icons-simple white top40">
+                                        <li><a class="facebook-bg-hvr"  href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
+                                        <li><a class="twitter-bg-hvr" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
+                                        <li><a class="instagram-bg-hvr" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
+                                    </ul>
+                                    <p class="whitecolor">&copy; <span id="year"></span> Product Shop. Made With Love by ThemesIndustry</p>
                                 </div>
                             </div>
                         </div>
+                        <div id="close_side_menu" class="tooltip"></div>
+                        <!-- End side menu -->
+                    </header>
+                    <div class="nav-utility">
+                        <div class="manage-icons d-inline-block">
+                            <ul class="d-flex justify-content-center align-items-center">
+                                <li class="d-inline-block">
+                                    <a id="add_search_box">
+                                        <i class="lni lni-search search-sidebar-hover"></i>
+                                    </a>
+                                </li>
+                                <li class="d-inline-block mini-menu-card">
+                                    <a class="nav-link" id="add_cart_box"  href="javascript:void(0)">
+                                        <i class="lni lni-shopping-basket"></i>
+                                    </a>
+                                </li>
+                                <a href="javascript:void(0)" class="d-inline-block sidemenu_btn d-block" id="sidemenu_toggle">
+                                    <i class="lni lni-menu"></i>
+                                </a>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </form>           
+    
+            </div>
         </div>
+    </div>
+    <!-- END HEADER NAVIGATION -->
+
+    <!-- START PORTOLIO SECTION -->
+<div class="portfolio-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- START PORTFOLIO HEADING -->
+            <div class="col-12">
+                <div class="portfolioHeading text-center">
+                    <h1 class="high-lighted-heading">User Profile</h1>
+                    <p>Aenean imperdiet. Etiam ultricies nisi vel augue men tuhi spectrum alle me.</p>
+                </div>
+            </div>
+            <!-- END PORTFOLIO HEADING -->
+        </div>
+    </div>
+</div>
+
+<!--Account sec Start-->
+<section class="account-sec padding-top padding-bottom bg-2">
+    <div class="container">
+        <div class="row border-row">
+            <div class="col-12 col-lg-4">
+                <div class="menu-bar">
+                    <div class="user-globe-details text-center">
+                        <div class="img-holder rounded-pill">
+                            <img src="img/ek.jpg" alt="picture" class="rounded-pill">
+                        </div>
+                        <h4 class="user-name">Emin Kuğu</h4>
+                        <span class="user-number">0(312) 585 0398</span>
+                    </div>
+                    <div class="menu-tabs">
+                        <ul class="nav nav-tabs flex-column nav-pills" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#account" role="tab" aria-controls="account" aria-selected="true"><i class="lni lni-user mr-1"></i>Account</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="lni lni-ticket mr-1"></i> My Tickets</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8">
+                <div class="main-content">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
+                            <table class="table table-hover table-light">
+                                <thead>
+                                
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Email</th>
+                                    <td>emin.kugu@tedu.edu.tr</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Address</th>
+                                    <td>TED Üniversitesi F305</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <p class="text">
+                                Your Expert Nutritionist Bihter Taşdelen stated that you do not need Mental Support.
+                            </p>
+                            <table class="table table-hover table-dark bg-black">
+                                <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Social Media</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Psychologist</th>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Account Sec End-->
+</body>
