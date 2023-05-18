@@ -650,7 +650,7 @@ END scroll-top-arrow
     -ms-flex-align: center;
     align-items: center;
     min-height: 100vh;
-    background: url(../img/slider-bg-2.jpg);
+    background: url(../img/concert.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1295,7 +1295,7 @@ END scroll-top-arrow
 /*banner section*/
 
 .banner-section{
-    background-image: url("../img/banner.jpg");
+    background-image: url("../img/Lumineers.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
