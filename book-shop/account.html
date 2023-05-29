@@ -43,6 +43,10 @@
     <link rel="stylesheet" href="../book-shop/css/style.css" />
     <!-- Custom Css  -->
     <link rel="stylesheet" href="../book-shop/css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <a class="scroll-top-arrow" href="javascript:void(0);"
@@ -846,7 +850,7 @@
                           <th scope="col">Ticket Category</th>
                           <th scope="col">Date</th>
                           <th scope="col">Price</th>
-                          <th scope="col"></th>
+                          <th scope="col">Ticket QR</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -854,13 +858,55 @@
                           <th scope="row">Musics</th>
                           <td>14.05.2023</td>
                           <td>$50.1</td>
+                          <td>
+                            <!-- Button trigger modal -->
+                            <button
+                              type="button"
+                              class="btn btn-floating btn-lg"
+                              data-mdb-toggle="modal"
+                              data-dismiss="modal"
+                              onclick="showModal()"
+                            >
+                              <i
+                                class="fas fa-ticket"
+                                style="font-size: 36px"
+                              ></i>
+                            </button>
+
+                            <!-- Modal -->
+                            <div
+                              class="modal fade"
+                              id="myModal"
+                              tabindex="-1"
+                              aria-labelledby="exampleModalLabel"
+                              aria-hidden="true"
+                            >
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-body text-center">
+                                    <div class="image-holder">
+                                      <img
+                                        src="/book-shop/img/concerts/qr.png"
+                                        class="card-img-top"
+                                        style="width: 350px"
+                                        alt="Lastest Arrivals 1"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button
+                                      type="button"
+                                      class="btn btn-secondary"
+                                      onclick="closeModal()"
+                                    >
+                                      Close
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
                         </tr>
-                      </tbody>
-                      <tbody>
-                        <div class="image-holder">
-                              <img src="/book-shop/img/concerts/qr.png" class="card-img-top" alt="Lastest Arrivals 1">
-                          </a>
-                      </div>
                       </tbody>
                     </table>
                   </div>
@@ -1286,5 +1332,13 @@
     <script src="../vendor/js/parallaxie.min.js"></script>
     <!-- Custom Script -->
     <script src="../book-shop/js/script.js"></script>
+    <script>
+      function showModal() {
+        $("#myModal").modal("show");
+      }
+      function closeModal() {
+        $("#myModal").modal("hide");
+      }
+    </script>
   </body>
 </html>
