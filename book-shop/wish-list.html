@@ -5,24 +5,31 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="TICKETIX"
+     
     />
-    <meta name="author" content="Themes Industry" />
+    <meta name="author"  />
+    <meta name="TICKETIX" />
+    <meta name="author" />
     <!-- description -->
     <meta
-      name="description"
-      content="Book Store is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose agency and HTML5 template with 14 ready home page demos."
+      name="TICKETIX"
+    
     />
+    <meta name="TICKETIX" />
     <!-- keywords -->
     <meta
-      name="keywords"
-      content="creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, personal, masonry, grid, faq"
+      name="TICKETIX"
+     
     />
+    <meta name="TICKETIX" />
     <!-- Page Title -->
-    <title>Product Listing</title>
+    <title>TICKETIX | wishList </title>
+     <!-- Favicon -->
+     <link rel="icon" href="img/icon.png">
+    <title>TICKETIX | WishList</title>
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico" />
+    <link rel="icon" href="img/icon.png" />
     <!-- Bundle -->
     <link rel="stylesheet" href="../vendor/css/bundle.min.css" />
     <!-- Plugin Css -->
@@ -32,8 +39,11 @@
     <link rel="stylesheet" href="../vendor/css/cubeportfolio.min.css" />
     <link rel="stylesheet" href="../vendor/css/wow.css" />
     <link rel="stylesheet" href="../vendor/css/LineIcons.min.css" />
-    <link rel="stylesheet" href="../book-shop/css/nouislider.min.css" />
-    <link rel="stylesheet" href="../book-shop/css/range-slider.css" />
+
+    <link rel="stylesheet" href="book-shop/css/nouislider.min.css" />
+    <link rel="stylesheet" href="book-shop/css/range-slider.css" />
+    <!-- Slider Setting Css  -->
+    <link rel="stylesheet" href="book-shop/css/settings.css" />
     <!-- Mega Menu  -->
     <link rel="stylesheet" href="../book-shop/css/megamenu.css" />
     <!-- StyleSheet  -->
@@ -51,13 +61,13 @@
       <div class="loader-spinner"></div>
     </div>
     <!--LOADER-->
-
     <!-- START HEADER NAVIGATION -->
     <div class="header-area">
       <div class="container">
         <div class="row upper-nav">
           <div class="text-left nav-logo">
-            <a href="/index.html" class="navbar-brand"
+            <a href="../index-book-shop.html" class="navbar-brand"
+            <a href="../index.html" class="navbar-brand"
               ><img src="/book-shop/img/5.png" alt="img"
             /></a>
           </div>
@@ -67,17 +77,24 @@
             <header class="site-header" id="header">
               <nav class="navbar navbar-expand-md static-nav">
                 <div class="container position-relative megamenu-custom">
-                  <a class="navbar-brand center-brand" href="index.html">
+                  <a
+                    class="navbar-brand center-brand"
+                    href="../index-book-shop.html"
+                  >
+                  <a class="navbar-brand center-brand" href="../index.html">
                     <img
                       src="/book-shop/img/5.png"
-                      alt="logo"
+                      alt="img"
                       class="logo-scrolled"
                     />
                   </a>
                   <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                        <a class="nav-link" href="/index.html">HOME</a>
+                        <a class="nav-link" href="../index-book-shop.html"
+                          >HOME</a
+                        >
+                        <a class="nav-link" href="../index.html">HOME</a>
                       </li>
                       <li class="nav-item dropdown static">
                         <a
@@ -390,6 +407,9 @@
                             </li>
                             <li>
                               <i class="lni-angle-double-right right-arrow"></i
+                              ><a
+                                class="dropdown-item"
+                                href="/index-book-shop.html"
                               ><a class="dropdown-item" href="/index.html"
                                 >Log Out</a
                               >
@@ -401,6 +421,7 @@
                   </div>
                 </div>
               </nav>
+
               <!-- side menu -->
               <div class="side-menu opacity-0 gradient-bg hidden">
                 <div class="inner-wrapper">
@@ -700,416 +721,241 @@
       </div>
     </div>
     <!-- END HEADER NAVIGATION -->
+
     <!--slider sec start-->
     <section
       id="slider-sec"
       class="slider-sec parallax"
-      style="background: url('img/slider2.jpg')"
+      style="background: url('/book-shop/img/concerts/wishList.jpg')"
     ></section>
     <!--slider sec end-->
 
-    <!--Product Line Up Start -->
-    <div class="product-listing">
+    <!-- START PORTOLIO SECTION -->
+    <div class="portfolio-section">
       <div class="container">
-        <div class="row no-gutters">
-          <!-- START STICKY NAV -->
-          <div class="col-12 col-lg-4 order-2 order-lg-1 sticky">
-            <div id="product-filter-nav" class="product-filter-nav mb-3">
-              <div class="product-category">
-                <h5 class="filter-heading text-center text-lg-left">Stage</h5>
-                <ul>
-                  <li>
-                    <a href="javascript:void(0)">June </a><span>(2)</span>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">August </a><span>(5)</span>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">September </a><span>(4)</span>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">October </a><span>(3)</span>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">November </a><span>(1)</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="product-price mt-1">
-                <h5 class="filter-heading">Shop By</h5>
-                <div id="slider-range"></div>
-                <p class="price-num" style="color: #0b2e13">
-                  Price: <span id="min-p"></span> <span id="max-p"></span>
-                </p>
-              </div>
+        <div class="row">
+          <!-- START PORTFOLIO HEADING -->
+          <div class="col-12">
+            <div class="portfolioHeading text-center">
+              <h1 class="high-lighted-heading">Wish List</h1>
+              <p>You Can Remove or View Your Wish List</p>
+            </div>
+          </div>
+          <!-- END PORTFOLIO HEADING -->
 
-              <button class="btn yellow-color-green-gradient-btn mt-1">
-                Filter
-              </button>
-
-              <div class="product-add mt-4">
-                <div class="row no-gutters">
-                  <div class="col-12">
-                    <img src="img/ad.jpg" alt="images" />
+          <!-- START PORTFOLIO IMAGES -->
+          <div class="col-12">
+            <div id="js-grid-blog-posts" class="cbp">
+              <div class="cbp-item Classic">
+                <a
+                  class="portfolio-circle-cart"
+                  href="/book-shop/shop-cart.html"
+                >
+                  <i class="fa fa-shopping-cart"></i>
+                </a>
+                <div
+                  class="cbp-caption-defaultWrap owl-theme sync-portfolio-carousel owl-carousel"
+                >
+                  <div class="item">
+                    <a
+                      href="/book-shop/img/hollywoodd.png"
+                      class="cbp-caption"
+                      data-fancybox="gallery1"
+                      data-title="Book 1"
+                      ><img src="/book-shop/img/hollywoodd.png" alt="Book 1"
+                    /></a>
                   </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <div class="cbp-l-grid-blog-title">
+                      <a href="#" target="_blank" class="portfolio-title"
+                        >Hollywood Vampires</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <div class="cbp-l-grid-blog-desc portfolio-des">$50.00</div>
+                  </div>
+                </div>
+                <div class="row mt-3 mb-3">
+                  <a
+                    type="button"
+                    class="btn btn-info btn-sm btn-block"
+                    href="/book-shop/product-detail.html"
+                  >
+                    View Detail
+                  </a>
+                  <button
+                    type="button"
+                    class="btn btn-secondary btn-sm btn-block"
+                  >
+                    Remove
+                  </button>
+                </div>
+              </div>
+
+              <div class="cbp-item Classic">
+                <a
+                  class="portfolio-circle-cart"
+                  href="/book-shop/shop-cart.html"
+                >
+                  <i class="fa fa-shopping-cart"></i>
+                </a>
+                <div
+                  class="cbp-caption-defaultWrap owl-theme sync-portfolio-carousel owl-carousel"
+                >
+                  <div class="item">
+                    <a
+                      href="/book-shop/img/concerts/IndianapolisvsBuffalo.jpg"
+                      class="cbp-caption"
+                      data-fancybox="gallery2"
+                      data-title="Book2"
+                    >
+                      <img
+                        src="/book-shop/img/concerts/IndianapolisvsBuffalo.jpg"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <div class="cbp-l-grid-blog-title">
+                      <a href="#" target="_blank" class="portfolio-title"
+                        >Buffalo Bills v Indianapolis Colts</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <div class="cbp-l-grid-blog-desc portfolio-des">$30.00</div>
+                  </div>
+                </div>
+                <div class="row mt-3 mb-3">
+                  <a
+                    type="button"
+                    class="btn btn-info btn-sm btn-block"
+                    href="/book-shop/product-detail.html"
+                  >
+                    View Detail
+                  </a>
+                  <button
+                    type="button"
+                    class="btn btn-secondary btn-sm btn-block"
+                  >
+                    Remove
+                  </button>
+                </div>
+              </div>
+              <div class="cbp-item Fantasy">
+                <a
+                  class="portfolio-circle-cart"
+                  href="/book-shop/shop-cart.html"
+                >
+                  <i class="fa fa-shopping-cart"></i>
+                </a>
+
+                <div
+                  class="cbp-caption-defaultWrap owl-theme sync-portfolio-carousel owl-carousel"
+                >
+                  <div class="item">
+                    <a
+                      href="/book-shop/img/kick.jpg"
+                      class="cbp-caption"
+                      data-fancybox="gallery4"
+                      data-title="Shirt Name"
+                    >
+                      <img src="/book-shop/img/kick.jpg" alt=""
+                    /></a>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <div class="cbp-l-grid-blog-title">
+                      <a href="#" target="_blank" class="portfolio-title"
+                        >Loca Fight Club Kick Boxing Tournament</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <div class="cbp-l-grid-blog-desc portfolio-des">$20.50</div>
+                  </div>
+                </div>
+                <div class="row mt-3 mb-3">
+                  <a
+                    type="button"
+                    class="btn btn-info btn-sm btn-block"
+                    href="/book-shop/product-detail.html"
+                  >
+                    View Detail
+                  </a>
+                  <button
+                    type="button"
+                    class="btn btn-secondary btn-sm btn-block"
+                  >
+                    Remove
+                  </button>
+                </div>
+              </div>
+              <div class="cbp-item motion">
+                <a
+                  class="portfolio-circle-cart"
+                  href="/book-shop/shop-cart.html"
+                >
+                  <i class="fa fa-shopping-cart"></i>
+                </a>
+                <div
+                  class="cbp-caption-defaultWrap owl-theme sync-portfolio-carousel owl-carousel"
+                >
+                  <div class="item">
+                    <a
+                      href="/book-shop/img/notre.jpg"
+                      class="cbp-caption"
+                      data-fancybox="gallery3"
+                      data-title="Shirt Name"
+                    >
+                      <img src="/book-shop/img/notre.jpg" alt=""
+                    /></a>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <div class="cbp-l-grid-blog-title">
+                      <a href="#" target="_blank" class="portfolio-title"
+                        >Notre Dame de Paris</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <div class="cbp-l-grid-blog-desc portfolio-des">
+                      $100.00
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3 mb-3">
+                  <a
+                    type="button"
+                    class="btn btn-info btn-sm btn-block"
+                    href="/book-shop/product-detail.html"
+                  >
+                    View Detail
+                  </a>
+                  <button
+                    type="button"
+                    class="btn btn-secondary btn-sm btn-block"
+                  >
+                    Remove
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <!-- END STICKY NAV -->
-
-          <!-- START PRODUCT COL 8 -->
-          <div class="col-md-12 col-lg-8 order-1 order-lg-2">
-            <div class="row">
-              <!-- START LISTING HEADING -->
-              <div class="col-12 product-listing-heading">
-                <h1 class="heading text-left">All Stage Events</h1>
-                <p class="para_text text-left">
-                  Stage events in your area are listed below.
-                </p>
-              </div>
-              <!-- END LISTING HEADING -->
-
-              <!-- START PRODUCT LISTING SECTION -->
-              <div class="col-12 product-listing-products">
-                <!-- START DISPLAY PRODUCT -->
-                <div class="product-list row">
-                  <div
-                    class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp"
-                    data-wow-delay=".2s"
-                  >
-                    <div
-                      class="product-item owl-theme product-listing-carousel owl-carousel"
-                    >
-                      <div class="item p-item-img">
-                        <img src="img/Richard.jpg" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="item p-item-img">
-                        <img src="img/Richard2.jpg" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="p-item-detail">
-                      <h4 class="text-center p-item-name">
-                        <a href="product-detail.html"> Richard </a>
-                      </h4>
-                      <p class="text-center p-item-price">$24.00</p>
-                    </div>
-                  </div>
-                  <div
-                    class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp"
-                    data-wow-delay=".2s"
-                  >
-                    <div
-                      class="product-item owl-theme product-listing-carousel owl-carousel"
-                    >
-                      <div class="item p-item-img">
-                        <img src="img/guldur.png" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="item p-item-img">
-                        <img src="img/guldur2.jpg" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="p-item-detail">
-                      <h4 class="text-center p-item-name">
-                        <a href="product-detail.html"> Güldür Güldür Show </a>
-                      </h4>
-                      <p class="text-center p-item-price">$35.00</p>
-                    </div>
-                  </div>
-                  <div
-                    class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp"
-                    data-wow-delay=".2s"
-                  >
-                    <div
-                      class="product-item owl-theme product-listing-carousel owl-carousel"
-                    >
-                      <div class="item p-item-img">
-                        <img src="img/dimios.jpg" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="item p-item-img">
-                        <img src="img/dimios2.jpg" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="p-item-detail">
-                      <h4 class="text-center p-item-name">
-                        <a href="product-detail.html"> Dimios </a>
-                      </h4>
-                      <p class="text-center p-item-price">$10.00</p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp"
-                    data-wow-delay=".2s"
-                  >
-                    <div
-                      class="product-item owl-theme product-listing-carousel owl-carousel"
-                    >
-                      <div class="item p-item-img">
-                        <img src="img/gorki2.jpg" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="item p-item-img">
-                        <img src="img/gorki3.jpg" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="p-item-detail">
-                      <h4 class="text-center p-item-name">
-                        <a href="product-detail.html">Gorki </a>
-                      </h4>
-                      <p class="text-center p-item-price">$24.35</p>
-                    </div>
-                  </div>
-                  <div
-                    class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp"
-                    data-wow-delay=".2s"
-                  >
-                    <div
-                      class="product-item owl-theme product-listing-carousel owl-carousel"
-                    >
-                      <div class="item p-item-img">
-                        <img src="img/kundakci.jpg" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="item p-item-img">
-                        <img src="img/kundakcı.jpg" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="p-item-detail">
-                      <h4 class="text-center p-item-name">
-                        <a href="product-detail.html"> Kundakçı </a>
-                      </h4>
-                      <p class="text-center p-item-price">$19.00</p>
-                    </div>
-                  </div>
-                  <div
-                    class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp"
-                    data-wow-delay=".2s"
-                  >
-                    <div
-                      class="product-item owl-theme product-listing-carousel owl-carousel"
-                    >
-                      <div class="item p-item-img">
-                        <img src="img/toz.jpg" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="item p-item-img">
-                        <img src="img/toz2.jpg" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="p-item-detail">
-                      <h4 class="text-center p-item-name">
-                        <a href="product-detail.html"> Toz </a>
-                      </h4>
-                      <p class="text-center p-item-price">$16.90</p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp"
-                    data-wow-delay=".2s"
-                  >
-                    <div
-                      class="product-item owl-theme product-listing-carousel owl-carousel"
-                    >
-                      <div class="item p-item-img">
-                        <img src="img/cghb2.jpg" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="item p-item-img">
-                        <img src="img/cghb3.jpg" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="p-item-detail">
-                      <h4 class="text-center p-item-name">
-                        <a href="product-detail.html">
-                          Çok Güzel Hareketler Bunlar 2
-                        </a>
-                      </h4>
-                      <p class="text-center p-item-price">$49.00</p>
-                    </div>
-                  </div>
-                  <div
-                    class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp"
-                    data-wow-delay=".2s"
-                  >
-                    <div
-                      class="product-item owl-theme product-listing-carousel owl-carousel"
-                    >
-                      <div class="item p-item-img">
-                        <img src="img/1984.jpg" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="item p-item-img">
-                        <img src="img/19842.jpg" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="p-item-detail">
-                      <h4 class="text-center p-item-name">
-                        <a href="product-detail.html"> 1984 </a>
-                      </h4>
-                      <p class="text-center p-item-price">$12.85</p>
-                    </div>
-                  </div>
-                  <div
-                    class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp"
-                    data-wow-delay=".2s"
-                  >
-                    <div
-                      class="product-item owl-theme product-listing-carousel owl-carousel"
-                    >
-                      <div class="item p-item-img">
-                        <img src="img/psikoz.jpg" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="item p-item-img">
-                        <img src="img/psikoz2.jpg" alt="images" />
-                        <div
-                          class="text-center d-flex justify-content-center align-items-center"
-                        >
-                          <a class="listing-cart-icon" href="shop-cart.html">
-                            <i class="fa fa-shopping-cart"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="p-item-detail">
-                      <h4 class="text-center p-item-name">
-                        <a href="product-detail.html"> 4.48 Psikoz </a>
-                      </h4>
-                      <p class="text-center p-item-price">$7.49</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="text-center mt-4 mb-4">
-                  <a href="" class="btn green-color-yellow-gradient-btn"
-                    >Next Page ></a
-                  >
-                </div>
-                <!-- END DISPLAY PRODUCT -->
-              </div>
-              <!-- END PRODUCT LISTING SECTION -->
-            </div>
-          </div>
-          <!-- END PRODUCT COL 8 -->
+          <!-- END PORTFOLIO IMAGES -->
         </div>
       </div>
     </div>
-    <!--Product Line Up End-->
-
+    <!-- END PORTOLIO SECTION -->
     <!--footer1 sec start-->
     <div class="footer">
       <div class="container">
@@ -1191,6 +1037,7 @@
       </div>
     </div>
     <!--foo0ter1 sec end-->
+
     <!--START SEARCH AREA-->
     <div class="search-box-overlay">
       <a><i class="fas fa-times cross-sign" id="close-window"></i></a>
